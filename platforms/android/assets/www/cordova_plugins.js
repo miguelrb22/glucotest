@@ -53,6 +53,13 @@ module.exports = [
         "clobbers": [
             "datePicker"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.PushPlugin/www/PushNotification.js",
+        "id": "com.phonegap.plugins.PushPlugin.PushNotification",
+        "clobbers": [
+            "PushNotification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -65,7 +72,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.0.0",
     "com.teamnemitoff.phonedialer": "0.3.0",
     "com.native5.plugins.datepicker": "0.1.1",
-    "com.sharinglabs.cordova.plugin.datepicker": "1.1.3"
+    "com.sharinglabs.cordova.plugin.datepicker": "1.1.3",
+    "com.phonegap.plugins.PushPlugin": "2.4.0"
 }
 // BOTTOM OF METADATA
 });
