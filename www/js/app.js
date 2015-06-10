@@ -105,8 +105,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         };
 
         $scope.llamar = function(){
-            alert("llamar");
-
             phonedialer.dial(
                 "615113951",
                 function (err) {
@@ -114,7 +112,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                     else alert("Dialer Error:" + err);
                 },
                 function (success) {
-                    alert('Dialing succeeded');
                 }
             );
         }
