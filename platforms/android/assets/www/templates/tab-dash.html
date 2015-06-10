@@ -1,0 +1,63 @@
+<ion-view view-title="Inicio">
+  <ion-content class="padding" ng-controller="pruebaController">
+
+    <div class="row" ng-show="estado == 0">
+        <div class="col col-50 col-offset-25"><button ng-click="alerta()" class="button button-positive button-block">PRUEBA</button></div>
+    </div>
+
+  <div class="row" ng-show="estado == 1">
+      <div class="col col-50 col-offset-25" style="margin-top: 22vh;">
+          <img src="img/cube.gif" style="width: 90%">
+      </div>
+  </div>
+
+
+  <div class="row" ng-show="resultado == true && toca%2==0">
+      <div class="col col-33">
+          <i class="ion-checkmark-circled icono_resultado" style="color:limegreen"></i>
+      </div>
+      <div class="col col-77">
+          <p>Resultado de la prueba:</p>
+          <p>Glucosa 139 mg/Dl</p>
+      </div>
+  </div>
+
+      <div  ng-show="resultado == true && toca%2==1">
+          <div class="row">
+              <div class="col col-33">
+                  <i class="ion-close-circled icono_resultado" style="color:red"></i>
+              </div>
+              <div class="col col-77">
+                  <p>Resultado de la prueba:</p>
+                  <p>Glucosa 259 mg/Dl</p>
+
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col col-80 col-offset-10">
+                  <button ng-click="llamar()" class="button button-outline button-energized button-block">
+                      <i class="ion-speakerphone"></i> Llamar al gestor
+                  </button>
+              </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col col-80 col-offset-10">
+                  <button ng-click="" class="button button-outline button-assertive button-block">
+                    <i class="ion-medkit"></i> Aviso a emergencias
+                  </button>
+              </div>
+          </div>
+
+          <input ng-click="mostrar()" type="date" value fecha>
+
+
+      </div>
+
+
+
+  </ion-content>
+</ion-view>
+
